@@ -1,0 +1,6 @@
+# 校正照片太大，不追蹤（可重拍）
+web_photo/
+web_photo_640x480/
+*.jpg
+# 產生出來的板子圖，可用 charuco_gen.py 重生
+charuco_board.png

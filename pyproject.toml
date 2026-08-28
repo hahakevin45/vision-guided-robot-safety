@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-guided-robot-safety"
+version = "0.1.0"
+description = "Safety simulation and ROS 2 integration for a vision-guided differential-drive robot"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kevin Su" }]
+dependencies = [
+  "numpy>=1.23",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+demo = [
+  "opencv-python-headless>=4.8",
+  "scipy>=1.9",
+  "matplotlib>=3.6",
+  "Pillow>=9.0",
+  "mcap-ros2-support>=0.5",
+]
+dev = [
+  "pytest>=7.0",
+  "pytest-timeout>=2.1",
+]

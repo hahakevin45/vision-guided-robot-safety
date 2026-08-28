@@ -1,0 +1,33 @@
+<sdf version="1.8">
+  <model name="marker_6">
+    <static>true</static>
+    <link name="marker_6_link">
+      <collision name="marker_6_collision">
+        <geometry>
+          <box>
+            <size>0.002 0.17 0.17</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="marker_6_visual">
+        <geometry>
+          <box>
+            <size>0.002 0.17 0.17</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>1 1 1 1</emissive>
+          <pbr>
+            <metal>
+              <albedo_map>model://marker_6/materials/textures/marker_6.png</albedo_map>
+              <emissive_map>model://marker_6/materials/textures/marker_6.png</emissive_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

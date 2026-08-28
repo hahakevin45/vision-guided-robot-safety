@@ -1,0 +1,32 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  unit:
+    name: Unit tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install ".[demo,dev]"
+
+      # The suite mocks rclpy and pyserial, so no ROS 2 or hardware is needed.
+      # Hardware-gated tests skip themselves at runtime (expected: 9 skipped).
+      - name: Run tests
+        env:
+          PYTHONPATH: ".:ros2_ws/src/vgr_core:ros2_ws/src/vgr_driver:ros2_ws/src/vgr_runtime:ros2_ws/src/vgr_safety_gate"
+        run: python -m pytest tests/ -q --timeout=120

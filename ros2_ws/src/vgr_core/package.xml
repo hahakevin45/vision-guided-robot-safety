@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>vgr_core</name>
+  <version>0.1.0</version>
+  <description>Shared domain models, protocol codecs, geometry, kinematics, localization, control and safety for Vision Guided Robot. No ROS or Gazebo dependencies.</description>
+  <maintainer email="portfolio@users.noreply.github.com">Kevin Su</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

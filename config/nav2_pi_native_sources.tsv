@@ -1,0 +1,5 @@
+# name	url	commit
+navigation2	https://github.com/ros-navigation/navigation2.git	6be3614013ec586051b86c97b919b293281490fe
+behaviortree_cpp	https://github.com/BehaviorTree/BehaviorTree.CPP.git	3ff6a32ba0497a08519c77a1436e3b81eff1bcd6
+bond_core	https://github.com/ros/bond_core.git	8f024ddef9487916e721f688cc9339240e941a56
+geographic_info	https://github.com/ros-geographic-info/geographic_info.git	24806adc767414eb3a34a58aefeb648ee415b09a

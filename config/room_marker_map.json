@@ -1,0 +1,16 @@
+{
+  "_comment": "Synthetic single-marker map for localization examples; not a measured physical room.",
+  "dictionary": "DICT_6X6_250",
+  "frame": "map",
+  "markers": [
+    {
+      "id": 1,
+      "x": 2.0,
+      "y": 0.0,
+      "z": 0.30,
+      "yaw": 3.141592653589793,
+      "size_m": 0.17,
+      "black_size_m": 0.17
+    }
+  ]
+}

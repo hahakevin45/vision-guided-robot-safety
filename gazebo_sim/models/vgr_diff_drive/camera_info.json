@@ -1,0 +1,10 @@
+{
+  "width": 640,
+  "height": 480,
+  "horizontal_fov_rad": 1.2,
+  "fx": 467.74270306499267,
+  "fy": 467.74270306499267,
+  "cx": 320.0,
+  "cy": 240.0,
+  "topic": "/camera/image_raw"
+}
